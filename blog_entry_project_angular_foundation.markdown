@@ -51,8 +51,61 @@ This project will be a simple app for tracking items I want to sell on ebay or c
 	
 	ii. Copy all files from the downloaded foundation css folder into `/vendor/assets/stylesheets`
 	
-	iii. open `app/assets/stylesheets/application.css` and add `*= require foundation` above `*= require tree .`
+	iii. open `app/assets/stylesheets/application.css` and add `*= require foundation` above <code>*= require tree .</code>
 	
 	iv. refresh the root page and see the font change.  Foundation has been set up in the project.
 	
-7. 
+7. Create the Model for `item`
+	
+	i. Run `rails g model item name:string description:text expected_sales_price:string actual_sales_price:string marketplace:string`.  This will create a model with those fields.
+	
+	ii. Run `rake db:migrate`
+	
+	iii. In `/app/models/item.rb` add `validates :name, presence: true`.  This will validate a name name must be entered prior to saving the item to the database.
+	
+	iv. Check the browser.
+	
+8. Tes the name validation [***********fix this section with below**********]
+	
+8. Create the Controller with actions
+
+	i. Run `rails g controller items index show new create edit update destroy`
+	
+	ii. Setup your actions: [*********add image**********]
+	
+	iii. Open `/config/routes.rb` and set like [*************add image**********]
+	
+9. Test the controller actions with Rspec
+
+	i. Setup `/spec/rails_helper.rb` with [************add image************]
+
+	i. open `/spec/controllers/item_controllers_spec.rb`
+	
+	ii. Setup your tests: [***********add image*********]
+	
+	iii. Run `rspec spec/controllers/item_controllers_spec.rb` [********add image*******]
+	
+10. Insert angular and underscore framework (again, we won't be using a gem for this!)
+	
+	i. download the whole angular framework from `http://www.angularjs.org`
+	
+	ii. copy the following `angular-route.min.js`, `angular-route.min.js.map`, `angular.min.js`, and `angular.min.js.map` to `/vendor/assets/javascripts`
+	
+	iii. download the underscore framework from `http://underscorejs.org/`.  You will need to use save as save them to the '/vendor/assets/javascripts' folder - make sure the names match the image or change them to match for asset pipeline purposes [***********add image********]
+	
+	iv. Update `/app/assets/javascripts/application.rb` to match [**********add image*********]
+	
+	v. Check the browser to ensure no errors
+	
+11. Create the following folders in `/app/assets/javascripts`: `controllers`, `factories`, `templates`.
+
+12. Create a `welcome.js` file in `/app/assets/javascripts` and [*********add image*******] - will discuss each piece in next blog
+
+13. Create a `controllers.js` file in `/app/assets/javascripts/controllers`
+
+14. Create a `factories.js` file in `/app/assets/javascripts/factories`
+	
+
+
+	
+	
