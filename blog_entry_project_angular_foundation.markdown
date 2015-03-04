@@ -97,13 +97,22 @@ This project will be a simple app for tracking items I want to sell on ebay or c
 	
 	v. Check the browser to ensure no errors
 	
+---------------------------------------------------------------------------------------
+Now for the main event!  Angular!  For my next blog entry, I plan to go more in depth to each of the javascript pieces.  For now, you can copy input what I've done below and play with angular on rails.
+	
 11. Create the following folders in `/app/assets/javascripts`: `controllers`, `factories`, `templates`.
 
 12. Create a `welcome.js` file in `/app/assets/javascripts` and [*********add image*******] - will discuss each piece in next blog
 
-13. Create a `controllers.js` file in `/app/assets/javascripts/controllers`
+13. Create the following controllers in `/app/assets/javascripts/controllers` `indexCtrl.js`, `editItemCtrl.js`, `newItemCtrl.js` and insert: [**********add image*********]
 
-14. Create a `factories.js` file in `/app/assets/javascripts/factories`
+14. Create a `factories.js` file in `/app/assets/javascripts/factories` and insert [********add image**********]
+
+14. Create the following templates in `/app/assets/javascripts/templates` `index.html`, `editItem.html`, `newItem.html` and insert: [**********add image*********]
+
+15. Update `/app/views/layouts/application.html.erb` with <code> ng-app="craigslistTracker"</code> [***********add image**********]
+
+15. Update `/app/views/layouts/application.html.erb` with `'ng-view': ''` [***********add image************]
 	
 
 

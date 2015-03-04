@@ -1,5 +1,12 @@
-var craigslistTracker = angular.module('craigslistTracker', []).config(function($httpProvider){
+var craigslistTracker = angular.module('craigslistTracker', ['ngRoute']).config(function($httpProvider){
 $httpProvider.defaults.headers.common['X-CSRF-Token'] = $("meta[name=csrf-token]").attr("content");
+})
+.config(function($routeProvider) {
+  $routeProvider
+    .otherwise({
+      templateUrl: 'assets/templates/index.html',
+      controller: 'indexCtrl'
+    })
 });
 
 
