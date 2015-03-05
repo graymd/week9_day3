@@ -1,19 +1,19 @@
 <div class='row'>
 <h3>Items</h3>
-<button class="button radius small">Add Item</button>
+<button class="button radius small" ng-click='newItem()'>Add Item</button>
 <br>
 <ul>
   <li ng-repeat="item in items.items">
     <div class='medium-6 columns'>
       <strong>Name:</strong>
       {{ item.name }}
-      <button class="button radius tiny">edit</button>
+      <button class="button radius tiny", ng-click='editItem(item.id)'>edit</button>
       <button class="button radius tiny" ng-click='deleteItem(item.id)'>Delete</button>
       <br>
       <strong>Description:</strong>
       {{ item.description }}
       <br>
-      <strong>Expect sales price:</strong>
+      <strong>Expected sales price:</strong>
       {{ item.expected_sales_price }}
       <br>
       <strong>Actual sales price:</strong>

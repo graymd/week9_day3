@@ -3,6 +3,14 @@ $httpProvider.defaults.headers.common['X-CSRF-Token'] = $("meta[name=csrf-token]
 })
 .config(function($routeProvider) {
   $routeProvider
+    .when('/items/new', {
+      templateUrl: 'assets/templates/newItem.html',
+      controller: 'newItemCtrl'
+    })
+    .when('/items/:id/edit/',{
+      templateUrl: 'assets/templates/editItem.html',
+      controller: 'editItemCtrl'
+    })
     .otherwise({
       templateUrl: 'assets/templates/index.html',
       controller: 'indexCtrl'

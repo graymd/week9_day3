@@ -8,4 +8,14 @@ var indexCtrl = craigslistTracker.controller('indexCtrl', function($scope, itemD
     itemData.deleteItem(itemId);
   }
 
+  $scope.newItem = function() {
+    console.log('newItem firing')
+    $location.url('/items/new')
+  }
+
+  $scope.editItem = function(itemId){
+    console.log('editItem firing');
+    $location.url('/items/' + itemId + '/edit')
+  }
+
 });
