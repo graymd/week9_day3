@@ -1,4 +1,4 @@
-craigslistTracker.controller('newItemCtrl', function($location, $scope, itemData){
+craigslistTracker.controller('newItemCtrl', ['$location', '$scope', 'itemData', function($location, $scope, itemData){
   console.log('Inside newItemCtrl');
 
   $scope.rootPage = function(){
@@ -14,4 +14,4 @@ craigslistTracker.controller('newItemCtrl', function($location, $scope, itemData
     });
     $location.url('/');
   };
-});
+}]);

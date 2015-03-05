@@ -1,4 +1,4 @@
-craigslistTracker.controller('editItemCtrl', function($location, $scope, itemData, $routeParams, $q){
+craigslistTracker.controller('editItemCtrl', ['$location', '$scope', 'itemData', '$routeParams', '$q', function($location, $scope, itemData, $routeParams, $q){
   console.log('Inside editItemCtrl');
 
   $scope.editItem = null;
@@ -27,4 +27,4 @@ craigslistTracker.controller('editItemCtrl', function($location, $scope, itemDat
     $location.url('/');
   };
 
-});
+}]);

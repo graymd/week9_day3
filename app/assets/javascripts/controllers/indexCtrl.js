@@ -1,4 +1,4 @@
-var indexCtrl = craigslistTracker.controller('indexCtrl', function($scope, itemData, $location){
+var indexCtrl = craigslistTracker.controller('indexCtrl', ['$scope', 'itemData', '$location', function($scope, itemData, $location){
   console.log('inside indexCtrl');
   $scope.items = itemData.data;
   console.log($scope.items);
@@ -17,4 +17,4 @@ var indexCtrl = craigslistTracker.controller('indexCtrl', function($scope, itemD
     $location.url('/items/' + itemId + '/edit')
   }
 
-});
+}]);

@@ -1,4 +1,4 @@
-craigslistTracker.factory('itemData', function($http){
+craigslistTracker.factory('itemData', ['$http', function($http){
   itemData = {
     data: {
       items: [
@@ -54,6 +54,6 @@ craigslistTracker.factory('itemData', function($http){
 
 
 return itemData;
-});
+}]);
 
 

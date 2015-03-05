@@ -2357,3 +2357,27 @@ Started GET "/items.json" for ::1 at 2015-03-05 13:17:22 -0500
 Processing by ItemsController#index as JSON
   [1m[36mItem Load (0.6ms)[0m  [1mSELECT `items`.* FROM `items`[0m
 Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 13:43:59 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 224ms (Views: 223.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 13:44:00 -0500
+Processing by ItemsController#index as JSON
+  [1m[35mItem Load (0.3ms)[0m  SELECT `items`.* FROM `items`
+Completed 200 OK in 32ms (Views: 19.9ms | ActiveRecord: 3.6ms)
+
+
+Started PATCH "/items/1.json" for ::1 at 2015-03-05 13:44:08 -0500
+Processing by ItemsController#update as JSON
+  Parameters: {"item"=>{"id"=>"1", "name"=>"new system", "description"=>"asdfads", "expected_sales_price"=>"$39", "actual_sales_price"=>"$60", "marketplace"=>"impedithbkjb- adksfjalksdjflkajsdfa"}, "id"=>"1"}
+  [1m[36mItem Load (1.3ms)[0m  [1mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+Unpermitted parameter: id
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (18.4ms)[0m  [1mUPDATE `items` SET `marketplace` = 'impedithbkjb- adksfjalksdjflkajsdfa', `updated_at` = '2015-03-05 18:44:08.355001' WHERE `items`.`id` = 1[0m
+  [1m[35m (1.1ms)[0m  COMMIT
+Completed 200 OK in 56ms (Views: 2.3ms | ActiveRecord: 21.0ms)
