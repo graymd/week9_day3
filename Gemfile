@@ -19,9 +19,9 @@ gem 'haml-rails'
 gem 'faker' 
 #remove unneeded assets
 gem 'quiet_assets'
-
+#add post gres for heroku deployment
 gem 'pg', group: :production
-
+#set ruby version for heroku deployment
 ruby '2.2.0'
 
 # Use jquery as the JavaScript library
