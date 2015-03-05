@@ -1,3 +1,5 @@
+deployed at: https://aqueous-depths-8311.herokuapp.com/#/
+
 Creating a rails project with angular front.
 
 So...it's been a while since I've written a blog entry.  Lots has happened in class!  We've learned: [xxxxxxxxEnter Things We've Learnedxxxxxxxxxx].

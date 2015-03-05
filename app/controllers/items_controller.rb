@@ -10,6 +10,7 @@ class ItemsController < ApplicationController
     @items = Item.all
     respond_to do |format|
       format.json {render json: @items }
+      format.html
     end
   end
 
@@ -17,6 +18,7 @@ class ItemsController < ApplicationController
     @item = Item.find params[:id]
     respond_to do |format|
       format.json {render json: @item }
+      format.html
     end
   end
 
@@ -24,6 +26,7 @@ class ItemsController < ApplicationController
     @item = Item.new
     respond_to do |format|
       format.json {render json: @item }
+      format.html
     end
   end
 
@@ -32,12 +35,14 @@ class ItemsController < ApplicationController
     @item.save
     respond_to do |format|
       format.json { render json: @item }
+      format.html {redirect_to items_path}
     end
   end
 
   def edit
     respond_to do |format|
       format.json {render json: @item }
+      format.html
     end
   end
 
@@ -45,6 +50,7 @@ class ItemsController < ApplicationController
     @item.update_attributes item_params
     respond_to do |format|
       format.json { render json: @item }
+      format.html {redirect_to items_path}
     end
   end
 
@@ -52,6 +58,7 @@ class ItemsController < ApplicationController
     @item.destroy
     respond_to do |format|
       format.json { head :no_content }
+      format.html {redirect_to items_path}
     end
   end
 
@@ -67,7 +74,8 @@ private
       :description,
       :expected_sales_price,
       :actual_sales_price,
-      :marketplace
+      :marketplace,
+      :image
       )
 
   end

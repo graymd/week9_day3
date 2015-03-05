@@ -1,0 +1,18 @@
+= form_for @item do |f|
+  = f.label :name
+  = f.text_field :name 
+  %br
+  = f.label :description
+  = f.text_field :description
+  %br
+  = f.label :expected_sales_price
+  = f.text_field :expected_sales_price
+  %br
+  = f.label :actual_sales_price
+  = f.text_field :actual_sales_price
+  %br
+  = f.label :image
+  = f.file_field :image, class: 'button'
+  %br
+  = f.submit 'Submit'
+  = link_to 'Cancel', items_path

@@ -1,2 +1,18 @@
-%h1 Items#show
-%p Find me in app/views/items/show.html.haml
+= link_to 'Return to Items', items_path
+%br
+= @item.name
+%br
+%br
+= @item.description
+%br
+%br
+= @item.expected_sales_price
+%br
+%br
+= @item.actual_sales_price
+%br
+%br
+= @item.marketplace
+%br
+%br
+= image_tag @item.image.url
