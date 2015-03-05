@@ -1,3 +1,29 @@
-Name / Description / Expected Sales Price / Actual Sales Price
+<div class='row'>
+<h3>Items</h3>
+<button class="button radius small">Add Item</button>
 <br>
-{{ item.name }} - {{ item.description }} - {{ item.expected_sales_price }} - {{ item.actual_sales_price }}
+<ul>
+  <li ng-repeat="item in items.items">
+    <div class='medium-6 columns'>
+      <strong>Name:</strong>
+      {{ item.name }}
+      <button class="button radius tiny">edit</button>
+      <button class="button radius tiny" ng-click='deleteItem(item.id)'>Delete</button>
+      <br>
+      <strong>Description:</strong>
+      {{ item.description }}
+      <br>
+      <strong>Expect sales price:</strong>
+      {{ item.expected_sales_price }}
+      <br>
+      <strong>Actual sales price:</strong>
+      {{ item.actual_sales_price }}
+      <br>
+      <strong>Selling marketplace</strong>
+      {{ item.marketplace }}
+      <br>
+      <br>
+    </div>
+  </li>
+</ul>
+</div>

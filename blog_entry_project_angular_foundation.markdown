@@ -85,6 +85,14 @@ This project will be a simple app for tracking items I want to sell on ebay or c
 	
 	iii. Run `rspec spec/controllers/item_controllers_spec.rb` [********add image*******]
 	
+10. Create data to play with:
+
+  i. in `/lib/tasks` create a new file: `create_items.rake`
+  
+  ii. add the following: [***********add image**********]
+  
+  iii. Run `rake create_items` - you can now see the data in the database if you look in sequel pro.  You can also see the json being rendered at `localhost:3000/items.json`
+	
 10. Insert angular and underscore framework (again, we won't be using a gem for this!)
 	
 	i. download the whole angular framework from `http://www.angularjs.org`
@@ -113,6 +121,8 @@ Now for the main event!  Angular!  For my next blog entry, I plan to go more in 
 15. Update `/app/views/layouts/application.html.erb` with <code> ng-app="craigslistTracker"</code> [***********add image**********]
 
 15. Update `/app/views/layouts/application.html.erb` with `'ng-view': ''` [***********add image************]
+
+16. show what goes in the HTML template files.
 	
 
 

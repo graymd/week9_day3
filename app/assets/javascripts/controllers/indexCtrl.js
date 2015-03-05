@@ -1,5 +1,11 @@
-var indexCtrl = craigslistTracker.controller('indexCtrl', function($scope, $location){
+var indexCtrl = craigslistTracker.controller('indexCtrl', function($scope, itemData, $location){
   console.log('inside indexCtrl');
-  $scope.item = {name: 'tv', description: 'big tv', expected_sales_price: '$100', actual_sales_price: '$75' }
+  $scope.items = itemData.data;
+  console.log($scope.items);
+  itemData.loadItems();
 
-})
+  $scope.deleteItem = function(itemId) {
+    itemData.deleteItem(itemId);
+  }
+
+});
