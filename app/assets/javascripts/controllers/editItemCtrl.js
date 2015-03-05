@@ -3,9 +3,9 @@ craigslistTracker.controller('editItemCtrl', function($location, $scope, itemDat
 
   $scope.editItem = null;
   $scope.findItem = function(){
-    console.log('findItem firing -' + $routeParams.id)
-    $scope.editItem = itemData.findItem($routeParams.id)
-    console.log('$scope.editItem:' + $scope.editItem.name)
+    console.log('findItem firing -' + $routeParams.id);
+    $scope.editItem = itemData.findItem($routeParams.id);
+    console.log('$scope.editItem:' + $scope.editItem);
   }
 
   $scope.findItem();

@@ -2080,3 +2080,244 @@ Started GET "/" for ::1 at 2015-03-04 23:53:44 -0500
 Processing by WelcomeController#index as HTML
   Rendered welcome/index.html.haml within layouts/application (0.2ms)
 Completed 200 OK in 96ms (Views: 96.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 08:56:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 202ms (Views: 202.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 08:56:41 -0500
+Processing by ItemsController#index as JSON
+  [1m[35mItem Load (0.3ms)[0m  SELECT `items`.* FROM `items`
+Completed 200 OK in 43ms (Views: 15.0ms | ActiveRecord: 23.9ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 08:56:44 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 130ms (Views: 129.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 11:03:54 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (4.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 219ms (Views: 218.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 11:03:55 -0500
+Processing by ItemsController#index as JSON
+  [1m[35mItem Load (0.4ms)[0m  SELECT `items`.* FROM `items`
+Completed 200 OK in 44ms (Views: 17.9ms | ActiveRecord: 22.9ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 11:04:19 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 107ms (Views: 106.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 11:05:10 -0500
+Processing by ItemsController#index as JSON
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT `items`.* FROM `items`[0m
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 11:05:11 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 156ms (Views: 155.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 11:05:12 -0500
+Processing by ItemsController#index as JSON
+  [1m[35mItem Load (0.4ms)[0m  SELECT `items`.* FROM `items`
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 11:05:17 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 120ms (Views: 119.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 11:05:19 -0500
+Processing by ItemsController#index as JSON
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT `items`.* FROM `items`[0m
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 11:05:20 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 107ms (Views: 106.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 11:05:21 -0500
+Processing by ItemsController#index as JSON
+  [1m[35mItem Load (0.4ms)[0m  SELECT `items`.* FROM `items`
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 11:56:54 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 108ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 11:57:04 -0500
+Processing by ItemsController#index as JSON
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT `items`.* FROM `items`[0m
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 11:58:20 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 94ms (Views: 93.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 11:58:20 -0500
+Processing by ItemsController#index as JSON
+  [1m[35mItem Load (0.4ms)[0m  SELECT `items`.* FROM `items`
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 11:58:48 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 90ms (Views: 89.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 11:59:40 -0500
+Processing by ItemsController#index as JSON
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT `items`.* FROM `items`[0m
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 11:59:41 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 93ms (Views: 92.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 11:59:41 -0500
+Processing by ItemsController#index as JSON
+  [1m[35mItem Load (0.4ms)[0m  SELECT `items`.* FROM `items`
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 11:59:47 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 94ms (Views: 93.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 12:00:26 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 131ms (Views: 131.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 12:00:26 -0500
+Processing by ItemsController#index as JSON
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT `items`.* FROM `items`[0m
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 12:00:29 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 94ms (Views: 94.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 12:00:29 -0500
+Processing by ItemsController#index as JSON
+  [1m[35mItem Load (0.3ms)[0m  SELECT `items`.* FROM `items`
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 12:01:09 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 131ms (Views: 130.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 12:01:10 -0500
+Processing by ItemsController#index as JSON
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT `items`.* FROM `items`[0m
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 12:01:29 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 96ms (Views: 96.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 12:01:30 -0500
+Processing by ItemsController#index as JSON
+  [1m[35mItem Load (0.4ms)[0m  SELECT `items`.* FROM `items`
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 12:01:32 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 97ms (Views: 97.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 12:01:33 -0500
+Processing by ItemsController#index as JSON
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT `items`.* FROM `items`[0m
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/items/1.json" for ::1 at 2015-03-05 12:23:10 -0500
+Processing by ItemsController#update as JSON
+  Parameters: {"item"=>{"id"=>"1", "name"=>"new system", "description"=>"asdfads", "expected_sales_price"=>"$39", "actual_sales_price"=>"$60", "marketplace"=>"impedithbkjb"}, "id"=>"1"}
+  [1m[35mItem Load (20.3ms)[0m  SELECT  `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1
+Unpermitted parameter: id
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (23.3ms)[0m  UPDATE `items` SET `marketplace` = 'impedithbkjb', `updated_at` = '2015-03-05 17:23:10.174705' WHERE `items`.`id` = 1
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 74ms (Views: 0.8ms | ActiveRecord: 46.2ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 12:37:15 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 162ms (Views: 162.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 12:37:16 -0500
+Processing by ItemsController#index as JSON
+  [1m[35mItem Load (0.4ms)[0m  SELECT `items`.* FROM `items`
+Completed 200 OK in 35ms (Views: 26.6ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2015-03-05 12:37:23 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 117ms (Views: 116.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items.json" for ::1 at 2015-03-05 12:37:23 -0500
+Processing by ItemsController#index as JSON
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT `items`.* FROM `items`[0m
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/items/2.json" for ::1 at 2015-03-05 12:37:27 -0500
+Processing by ItemsController#update as JSON
+  Parameters: {"item"=>{"id"=>"2", "name"=>"microchip", "description"=>"Ducimus assumenda necessitatibus voluptas inventore voluptatem odio.", "expected_sales_price"=>"$49", "actual_sales_price"=>"$67", "marketplace"=>"qui alkjsdlkfalskdmfa;d"}, "id"=>"2"}
+  [1m[35mItem Load (0.4ms)[0m  SELECT  `items`.* FROM `items` WHERE `items`.`id` = 2 LIMIT 1
+Unpermitted parameter: id
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `items` SET `marketplace` = 'qui alkjsdlkfalskdmfa;d', `updated_at` = '2015-03-05 17:37:27.102665' WHERE `items`.`id` = 2
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 3.0ms)
