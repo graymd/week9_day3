@@ -20,6 +20,10 @@ gem 'faker'
 #remove unneeded assets
 gem 'quiet_assets'
 
+gem 'pg', group: :production
+
+ruby '2.2.0'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
