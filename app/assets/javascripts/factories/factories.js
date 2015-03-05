@@ -22,6 +22,14 @@ craigslistTracker.factory('itemData', function($http){
       });
     }
   }
+
+    itemData.addItem = function(item) {
+    console.log('addItem running')
+    $http.post('/items.json', item).success(function(itemFromServer){
+      itemData.pushItem(itemFromServer);
+    })
+  }
+
   itemData.pushItem = function(item){
     itemData.data.items.push(item);
   }
@@ -35,17 +43,9 @@ craigslistTracker.factory('itemData', function($http){
   }
 
   itemData.findItem = function(itemId) {
-    return _.findWhere( itemData.data.items, {
-      id: parseInt(itemId)
-    });
+    return _.findWhere( itemData.data.items, {id: parseInt(itemId)});
   }
 
-  itemData.addItem = function(item) {
-    console.log('addItem running')
-    $http.post('/items.json', item).success(function(itemFromServer){
-      itemData.pushItem(itemFromServer);
-    })
-  }
 
   itemData.updateItem = function(item) {
     $http.patch('items/' + item.item.id + '.json', item).success(function(data){
@@ -55,4 +55,5 @@ craigslistTracker.factory('itemData', function($http){
 
 return itemData;
 });
+
 

@@ -3,8 +3,9 @@ craigslistTracker.controller('editItemCtrl', function($location, $scope, itemDat
 
   $scope.editItem = null;
   $scope.findItem = function(){
-    console.log('findItem firign')
+    console.log('findItem firing -' + $routeParams.id)
     $scope.editItem = itemData.findItem($routeParams.id)
+    console.log('$scope.editItem:' + $scope.editItem.name)
   }
 
   $scope.findItem();
@@ -16,7 +17,7 @@ craigslistTracker.controller('editItemCtrl', function($location, $scope, itemDat
     itemData.updateItem(
     {
       item: {
-        id: $routeParams.id, name: $scope.formName, description: $scope.formDescription, expected_sales_price: $scope.formExpecPrice,  actual_sales_price: $scope.formActPrice, marketplace: $scope.formMarketplace
+        id: $routeParams.id, name: $scope.editItem.name, description: $scope.editItem.description, expected_sales_price: $scope.editItem.expected_sales_price,  actual_sales_price: $scope.editItem.actual_sales_price, marketplace: $scope.editItem.marketplace
       }
     });
         $location.url('/');

@@ -14,7 +14,6 @@ var indexCtrl = craigslistTracker.controller('indexCtrl', function($scope, itemD
   }
 
   $scope.editItem = function(itemId){
-    console.log('editItem firing');
     $location.url('/items/' + itemId + '/edit')
   }
 

@@ -1,10 +1,10 @@
 <a ng-click='rootPage()'>Back</a>
 <form ng-submit='submitForm()'>
-  <input type='text', placeholder='Name', ng-model='formName'>
-  <input type='text', placeholder='Description', ng-model='formDescription'>
-  <input type='text', placeholder='Expected Sales Price', ng-model='formExpecPrice'>
-  <input type='text', placeholder='Actual Sales Price' ng-model='formActPrice'>
-  <input type='text', placeholder='Marketplace', ng-model='formMarketplace'>
+  <input type='text', placeholder='Name', ng-model='editItem.name'>
+  <input type='text', placeholder='Description', ng-model='editItem.description'>
+  <input type='text', placeholder='Expected Sales Price', ng-model='editItem.expected_sales_price'>
+  <input type='text', placeholder='Actual Sales Price' ng-model='editItem.actual_sales_price'>
+  <input type='text', placeholder='Marketplace', ng-model='editItem.marketplace'>
   <input type='submit', class='button small radius'> 
 </form>
 
